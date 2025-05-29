@@ -104,3 +104,8 @@ plt.xticks(range(X.shape[1]), [feat_names[i] for i in indices], rotation=90)
 plt.tight_layout()
 plt.savefig("feature_importance_with_traffic.png")
 plt.show()
+pd.DataFrame({
+    "Actual Lead Time": y_test,
+    "Predicted Lead Time": y_pred
+}).to_csv("predictions.csv", index=False)
+print("📁 Predictions saved to 'predictions.csv'")
