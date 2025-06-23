@@ -92,7 +92,7 @@ print("Best Parameters:", grid_search.best_params_)
 print(f"MAE: {mae:.2f}")
 print(f"R² Score: {r2:.2f}")
 
-# Feature Importance Plot
+# Feature Importance
 importances = best_rf.feature_importances_
 feat_names = X.columns
 indices = np.argsort(importances)[::-1]

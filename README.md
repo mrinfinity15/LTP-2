@@ -39,9 +39,56 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost lightgbm stream
 #Run the model training and evaluation in your terminal:
 python LTP2.py
 
+(🔍 This script will:
+Load the first 5000 rows from the supply chain dataset
+
+Merge product traffic logs from tokenized_access_logs.csv
+
+Extract features like weekday, hour, location, and traffic
+
+Train a RandomForestRegressor with grid search
+
+Print:
+
+MAE (Mean Absolute Error)
+
+R² Score
+
+Output:
+
+predictions.csv: Actual vs Predicted lead time
+
+feature_importance_with_traffic.png: Key influencing features)
+
 #To launch the interactive dashboard, run:
 streamlit run lead_time_dashboard.py
 
+(What you can do in the dashboard:
+Upload required files:
+
+DataCoSupplyChainDataset.csv
+
+tokenized_access_logs.csv
+
+Select one of the following models:
+
+Random Forest
+
+XGBoost
+
+LightGBM
+
+Visualizations provided:
+
+📉 MAE & R² Score
+
+📊 Feature Importance (Top predictors)
+
+🟠 Residual Distribution
+
+📋 Prediction Table (actual vs predicted)
+
+⬇️ Download predictions as CSV)
 
 #Required CSV Files
 | File Name                      | Description                                        |
