@@ -2,17 +2,19 @@
 
 This project predicts real lead time (actual delivery duration) for customer orders using a trained machine learning model. It integrates features like product traffic logs, order metadata, and time-based features to help logistics professionals optimize delivery performance.
 
+![Home](./screenshot/home.png)
+![Analysis](./screenshot/Analysis.png)
 ---
 
 ## 📁 Project Structure
-
+```
 ├── LTP2.py # Core model training and evaluation script (CLI)
 ├── lead_time_dashboard.py # Streamlit dashboard for interactive use
 ├── DataCoSupplyChainDataset.csv # Main supply chain dataset
 ├── tokenized_access_logs.csv # Product-hour traffic logs
 ├── predictions.csv # Output predictions from LTP2.py
 └── feature_importance_with_traffic.png # Feature importance visualization
-
+```
 
 ---
 

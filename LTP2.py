@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings("ignore")
 
+
 # Load the supply chain dataset
 df = pd.read_csv("d:/LTP 2/DataCoSupplyChainDataset.csv", encoding="ISO-8859-1", nrows=5000)
 df.columns = df.columns.str.strip().str.lower()  # Standardize column names
